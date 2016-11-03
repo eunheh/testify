@@ -8,11 +8,14 @@ class GildedRose {
   tick () {
     if (this.name != 'Aged Brie' && this.name != 'Backstage passes to a TAFKAL80ETC concert') {
       if (this.quality > 0) {
-        if (this.name != 'Sulfuras, Hand of Ragnaros') {
+        if (this.name != 'Sulfuras, Hand of Ragnaros' && this.name != 'Conjured Mana Cake') {
           this.quality = this.quality - 1;
         }
         if (this.name == 'Conjured Mana Cake') {
           this.quality = this.quality - 2;
+          if (this.sellIn <= 0) {
+            this.quality = this.quality - 2;
+          }
         }
       }
     } else {
@@ -39,12 +42,12 @@ class GildedRose {
       if (this.name != 'Aged Brie') {
         if (this.name != 'Backstage passes to a TAFKAL80ETC concert') {
           if (this.quality > 0) {
-            if (this.name != 'Sulfuras, Hand of Ragnaros') {
+            if (this.name != 'Sulfuras, Hand of Ragnaros' && this.name != 'Conjured Mana Cake') {
               this.quality = this.quality - 1;
             }
           }
         } else {
-          this.quality = this.quality - this.quality;
+            this.quality = this.quality - this.quality;
         }
       } else {
         if (this.quality < 50) {
