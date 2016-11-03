@@ -11,7 +11,7 @@ class GildedRose {
         if (this.name != 'Sulfuras, Hand of Ragnaros') {
           this.quality = this.quality - 1;
         }
-        if (this.name == 'Conjured') {
+        if (this.name == 'Conjured Mana Cake') {
           this.quality = this.quality - 2;
         }
       }
