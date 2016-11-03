@@ -11,6 +11,9 @@ class GildedRose {
         if (this.name != 'Sulfuras, Hand of Ragnaros') {
           this.quality = this.quality - 1;
         }
+        if (this.name == 'Conjured') {
+          this.quality = this.quality - 2;
+        }
       }
     } else {
       if (this.quality < 50) {
