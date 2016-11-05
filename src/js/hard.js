@@ -19,7 +19,7 @@ class GildedRose {
     }
   }
 
-  agedBrie() {
+  agedBrie () {
     this.sellIn--;
     if (this.sellIn >= 0) {
       this.quality = this.quality + 1;
@@ -31,7 +31,7 @@ class GildedRose {
     }
   }
 
-  sulfuras() {
+  sulfuras () {
     if (this.sellIn >= 0) {
       this.quality = 80;
     } else if (this.sellIn < 0) {
@@ -39,7 +39,7 @@ class GildedRose {
     }
   }
 
-  conjured() {
+  conjured () {
     this.sellIn--;
     if (this.sellIn >= 0) {
       this.quality = this.quality - 2;
@@ -80,6 +80,5 @@ class GildedRose {
   }
 
 };
-
 
 export { GildedRose };
